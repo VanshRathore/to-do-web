@@ -17,15 +17,15 @@
             </div>
             <div class="row">
                 <div class="input-section d-flex flex-row justify-content-center">
-                    <div class = "todo-input">
-                        <input type="text" class="form-control" placeholder="Write a to-do">
+                    <div class = "todo-input" id="todo-input">
+                        <input type="text" class="form-control" id="todo-input-bar" placeholder="Write another todo.">
                     </div>
-                    <div class="save-todo btn btn-primary"> Save </div>
-                    <div class="get-todos btn btn-warning"> Get pending To-Do </div>
+                    <div class="save-todo btn btn-primary disabled" id="save-todo"> Save </div>
+                    <div class="get-todos btn btn-warning" id="get-todos"> Get pending To-Do </div>
                 </div>
             </div>
             <!-- list of todos -->
-            <div class="todo-data">
+            <div class="todo-data" id="todo-data">
                  <div class="row">
                      <div class="list-todo-heading d-flex flex-row justify-content-between">
                          <div class="todo-no">NO.</div>
@@ -35,48 +35,22 @@
                      </div>
                  </div>
                  <hr>
+                 <div class="todo-data-list" id="todo-data-list">
+                    
+                 </div>
                  <!-- actual todos -->
-                 <div class="row">
-                    <div class="todo-item d-flex flex-row justify-content-between ">
+                 <!-- <div class="row">
+                    <div class="todo-item d-flex flex-row justify-content-between align-item-center ">
                         <div class="todo-no">1.</div>
                         <div class="todo-detail text-muted">Complete the action item in todo</div>
                         <div class="todo-status text-muted">In Progress</div>
-                        <div class="todo-action">
+                        <div class="todo-action d-flex justify-content-start gap-2">
                             <button class="btn btn-danger">Delete</button>
                             <button class="btn btn-success">Finished</button>
                         </div>
                     </div>
                     <hr>
-                 </div>
-
-
-                 <div class="row">
-                    <div class="todo-item d-flex flex-row justify-content-between ">
-                        <div class="todo-no">2.</div>
-                        <div class="todo-detail text-muted">Complete the action item in todo</div>
-                        <div class="todo-status text-muted">In Progress</div>
-                        <div class="todo-action">
-                            <button class="btn btn-danger">Delete</button>
-                            <button class="btn btn-success">Finished</button>
-                        </div>
-                    </div>
-                    <hr>
-                 </div>
-
-
-                 <div class="row">
-                    <div class="todo-item d-flex flex-row justify-content-between ">
-                        <div class="todo-no">3.</div>
-                        <div class="todo-detail text-muted">Complete the action item in todo</div>
-                        <div class="todo-status text-muted">In Progress</div>
-                        <div class="todo-action">
-                            <button class="btn btn-danger">Delete</button>
-                            <button class="btn btn-success">Finished</button>
-                        </div>
-                    </div>
-                    <hr>
-                 </div>
-
+                 </div> -->
 
              </div>
             
@@ -86,6 +60,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script>index.js</script>
+    <script src="index.js"></script>
 </body>
 </html>
